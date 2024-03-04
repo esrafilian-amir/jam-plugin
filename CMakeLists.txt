@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.2)
 file(GLOB SOURCE_FILES *.cpp)
 file(GLOB INCLUDE_FILES *.h)
 
-set(OPENSIM_INSTALL_DIR "C:/OpenSim\ 4.2/bin"
+set(OPENSIM_INSTALL_DIR "C:/OpenSim\ 4.5/bin"
     CACHE PATH "Top-level directory of OpenSim install")
 
 set(PLUGIN_NAME "osimJAMPlugin"
@@ -15,7 +15,7 @@ set(PLUGIN_NAME "osimJAMPlugin"
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(OpenSim REQUIRED PATHS "C:/OpenSim\ 4.2/bin")
+find_package(OpenSim REQUIRED PATHS "C:/OpenSim\ 4.5/bin")
 
 add_library(${PLUGIN_NAME} SHARED ${SOURCE_FILES} ${INCLUDE_FILES})
 
